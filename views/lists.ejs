@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+    <h1> <%= date %></h1>
+
+    <ol>
+       <% for(var i=0; i<newListItems.length ; i++) { %>
+         <form action="/delete" method="post">
+           <div class="box">
+            <input type="checkbox" onChange="this.form.submit()" name="checkbox" value="<%=newListItems[i].id%>">
+            <li> <%= newListItems[i].name %> </li>
+           </div>
+           <input type="hidden" name="listName" value="<%=date%>">
+         </form>
+       <% }  %>
+    </ol>
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+       <button type="submit" name="lists" value=<%= date %>>ADD</button>
+    </form>
+
+    <%- include("footer") -%>

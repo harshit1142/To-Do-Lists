@@ -1,0 +1,29 @@
+:root{
+    list-style: none;
+}
+body{
+    background:linear-gradient(90deg,green 2%,black 1%,rgba(255, 255, 0, 0.871) 3%,rgba(255, 166, 0, 0.785) 71%,black 1%,rgba(0, 0, 255, 0.855) 1%);
+    width:97%;
+    height: auto;
+    font-size: 25px;
+    color: brown;
+    text-align: center;
+    padding: 0;
+    margin: 0%;
+}
+h1{
+    color: rgb(9, 10, 9);
+    text-decoration: underline;
+
+}
+h1:hover{
+    color: rgb(170, 11, 206);
+}
+.box{
+    display: flex;
+    /* padding-left: 40%; */
+}
+.box li{
+    list-style: none;
+    /* margin-right: 33px; */
+}
